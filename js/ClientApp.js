@@ -4,7 +4,7 @@ import MyTitle from './MyTitle';
 
 var div = React.DOM.div;
 
-var MyTitleFactor = React.createFactory(MyTitle);
+var MyTitleFactory = React.createFactory(MyTitle);
 
 var MyFirstComponent = React.createClass({
   render: function() {
@@ -12,4 +12,7 @@ var MyFirstComponent = React.createClass({
       div(null, MyTitleFactory({title: 'props are the best', color: 'peru' }))
     )
   }
-})
+});
+
+ReactDOM.render(MyFirstComponent, document.getElementById('app'));
+
