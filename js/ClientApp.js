@@ -14,5 +14,5 @@ var MyFirstComponent = React.createClass({
   }
 });
 
-ReactDOM.render(MyFirstComponent, document.getElementById('app'));
+ReactDOM.render(React.createElement(MyFirstComponent), document.getElementById('app'));
 
