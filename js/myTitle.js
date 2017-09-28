@@ -10,4 +10,6 @@ var MyTitle = React.createClass({
       )
     )
   }
-})
+});
+
+export default MyTitle;
